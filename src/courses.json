@@ -5,7 +5,7 @@
     "CR": 4,
     "Offered": "Fa, Sp, W, Su",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "DSNL",
     "Major": "N"
@@ -16,7 +16,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "DSNS, SCIS",
     "Major": "N"
@@ -27,7 +27,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "DSHS, DVUP, SCIS",
     "Major": "N"
@@ -38,7 +38,7 @@
     "CR": 3,
     "Offered": "Fa, Sp, W, Su",
     "Prerequisites": "",
-    "Minor~": "PAI or SHD",
+    "Minor": "PAI or SHD",
     "CORE": "SB",
     "Gen Ed": "DSHS, DVCC, SCIS",
     "Major": "N"
@@ -49,7 +49,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "ANTH220 or ANTH222. Restriction: Must be in a major within the BSOS-",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -60,7 +60,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "Anthropology department.",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "DSSP",
     "Major": "N"
@@ -71,7 +71,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "Junior standing or higher",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -82,7 +82,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -93,7 +93,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SAT or PAI",
+    "Minor": "SAT or PAI",
     "CORE": "PS",
     "Gen Ed": "DSNS, SCIS",
     "Major": "N"
@@ -104,7 +104,7 @@
     "CR": 4,
     "Offered": "Fa, Sp",
     "Prerequisites": "MATH 110 or 115; Recommended AOSC 201",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "PS",
     "Gen Ed": "DSNL (if taken tgether)",
     "Major": "N"
@@ -115,7 +115,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "IE",
     "Gen Ed": "DSNS or DSSP, SCIS",
     "Major": "N"
@@ -126,7 +126,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT or PAI",
+    "Minor": "SAT or PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -137,7 +137,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -148,7 +148,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "DSSP",
     "Major": "N"
@@ -159,7 +159,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "LS",
     "Gen Ed": "DSNS or DSSP, SCIS",
     "Major": "N"
@@ -170,7 +170,7 @@
     "CR": 4,
     "Offered": "Sp",
     "Prerequisites": "MATH 220 recommended",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "SB",
     "Gen Ed": "DSHS",
     "Major": "N"
@@ -181,7 +181,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "",
-    "Minor~": "PAI, SHD",
+    "Minor": "PAI, SHD",
     "CORE": "D",
     "Gen Ed": "DVUP",
     "Major": "N"
@@ -192,7 +192,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -203,7 +203,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "1 course in BMGT or permission",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -214,7 +214,7 @@
     "CR": 3,
     "Offered": "Fa,Sp",
     "Prerequisites": "math 160 or higher",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "DSNL,DSNS",
     "Major": "N"
@@ -225,7 +225,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "Not open to science majors or to students who have taken BSCI105",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "LL (if taken",
     "Gen Ed": "DSNL",
     "Major": "N"
@@ -236,7 +236,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "wLSith BSCI",
     "Gen Ed": "DSNS, SCIS",
     "Major": "N"
@@ -247,7 +247,7 @@
     "CR": 4,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "LL",
     "Gen Ed": "DSNL, SCIS",
     "Major": "N"
@@ -258,7 +258,7 @@
     "CR": 4,
     "Offered": "Fa, W, Sp",
     "Prerequisites": "BSCI106 and MATH 130 or 140",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -269,7 +269,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "BSCI 106",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -280,7 +280,7 @@
     "CR": 1,
     "Offered": "sp",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -291,7 +291,7 @@
     "CR": 3,
     "Offered": "Fa,Sp",
     "Prerequisites": "",
-    "Minor~": "PAI,SHD",
+    "Minor": "PAI,SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -302,7 +302,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "ENCE 310 and permission of dept",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -313,7 +313,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "ENGL 101. Minimum of 60 credits earned",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "FSPW",
     "Major": "N"
@@ -324,7 +324,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "ENME331, ENGR major",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -335,7 +335,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "ENES 232",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -346,7 +346,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "PS",
     "Gen Ed": "DSNS",
     "Major": "N"
@@ -357,7 +357,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "DSHS",
     "Major": "N"
@@ -368,7 +368,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "ENSP 101 & 102 recommended; Permission of ENSP department.",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -379,7 +379,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "LS",
     "Gen Ed": "",
     "Major": "N"
@@ -390,7 +390,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "DSNS",
     "Major": "N"
@@ -401,7 +401,7 @@
     "CR": 3,
     "Offered": "Sp (Even years)",
     "Prerequisites": "BSCI 106 or ENST 214. 1 course from MATH 113-499 range",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -412,7 +412,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "ENST 233 or perm of dept",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -423,7 +423,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "SB, D",
     "Gen Ed": "DSHS",
     "Major": "N"
@@ -434,7 +434,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "PS",
     "Gen Ed": "DSNS, SCIS",
     "Major": "N"
@@ -445,7 +445,7 @@
     "CR": 4,
     "Offered": "Fa, SP",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "DSNL (if taken together)",
     "Major": "N"
@@ -456,7 +456,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "SB,",
     "Gen Ed": "DVCC, DSHS",
     "Major": "N"
@@ -467,7 +467,7 @@
     "CR": 3,
     "Offered": "Varies",
     "Prerequisites": "GEOG201,GEOG202, ANTH220, or ANTH260; or permission of department",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "DSHS, DVUP, SCIS",
     "Major": "N"
@@ -478,7 +478,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "ANTH220, ANTH 260, GEOG 202, or GEOG 201",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -489,7 +489,7 @@
     "CR": 3,
     "Offered": "Fa, Su",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -500,7 +500,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "GEOG 306, 123 or permission of dept; Recommended GEOG 201/211, GEOG34",
-    "Minor~": "SHD, SAT",
+    "Minor": "SHD, SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -511,7 +511,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "GEOG202 recommended",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -522,7 +522,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "GEOG 140 or similar, or permission",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -533,7 +533,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "GEOG 342 or permission; recommended GEOG 123",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -544,7 +544,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "Permission of BSOS-Geography  department. Or GEOG306, STAT100,",
-    "Minor~": "SAT, SHD",
+    "Minor": "SAT, SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -555,7 +555,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "GVPT 170 or ENSP 102 (recommended)",
-    "Minor~": "SAT or PAI",
+    "Minor": "SAT or PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -566,7 +566,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "GVPT 200",
-    "Minor~": "PAI or SHD",
+    "Minor": "PAI or SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -577,7 +577,7 @@
     "CR": 3,
     "Offered": "Fa (Even years)",
     "Prerequisites": "GVPT 200",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "SH",
     "Gen Ed": "",
     "Major": "N"
@@ -588,7 +588,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -599,7 +599,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "",
-    "Minor~": "SAT or SHD",
+    "Minor": "SAT or SHD",
     "CORE": "HO",
     "Gen Ed": "DSHU or DSSP",
     "Major": "N"
@@ -610,7 +610,7 @@
     "CR": 1,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -621,7 +621,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "ENST 200",
-    "Minor~": "SAT, SHD",
+    "Minor": "SAT, SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -632,7 +632,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -643,7 +643,7 @@
     "CR": 3,
     "Offered": "Su",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "DSSP, DCIS",
     "Major": "N"
@@ -654,7 +654,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -665,7 +665,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -676,7 +676,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "IE",
     "Gen Ed": "DSHU, SCIS",
     "Major": "N"
@@ -687,7 +687,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "PS",
     "Gen Ed": "DSNS, SCIS",
     "Major": "N"
@@ -698,7 +698,7 @@
     "CR": 3,
     "Offered": "F",
     "Prerequisites": "",
-    "Minor~": "SAT or PAI",
+    "Minor": "SAT or PAI",
     "CORE": "IE",
     "Gen Ed": "",
     "Major": "N"
@@ -709,7 +709,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "PAI, SHD",
+    "Minor": "PAI, SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -720,7 +720,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "PAI,SHD",
+    "Minor": "PAI,SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -731,7 +731,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -742,7 +742,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -753,7 +753,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "ID",
     "Gen Ed": "DSSP, SCIS",
     "Major": "N"
@@ -764,18 +764,7 @@
     "CR": "1, 3",
     "Offered": "Fa, Sp",
     "Prerequisites": "",
-    "Minor~": "SAT",
-    "CORE": "",
-    "Gen Ed": "",
-    "Major": "N"
-  },
-  {
-    "Course": "",
-    "Description": "",
-    "CR": "",
-    "Offered": "",
-    "Prerequisites": "",
-    "Minor~": "",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -786,7 +775,7 @@
     "CR": 1,
     "Offered": "Sp",
     "Prerequisites": "PLSC 100 or 101, PLSC 253, and PLSC 254",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -797,7 +786,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "At least one course in ecology",
-    "Minor~": "SAT or SHD",
+    "Minor": "SAT or SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -808,7 +797,7 @@
     "CR": 3,
     "Offered": "Su",
     "Prerequisites": "",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -819,7 +808,7 @@
     "CR": 3,
     "Offered": "Varies",
     "Prerequisites": "6 credits of SOCY",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "N"
@@ -830,7 +819,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "SB; D",
     "Gen Ed": "DSHS, DVUP, SCIS",
     "Major": "N"
@@ -841,7 +830,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -852,7 +841,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -863,7 +852,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -874,7 +863,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -885,7 +874,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "PAI, SHD",
+    "Minor": "PAI, SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -896,7 +885,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -907,7 +896,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -918,7 +907,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "CHEM 481",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -929,7 +918,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -940,7 +929,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "Minimum grade of C- in ECON326; and 1 course with a minimum grade",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -951,7 +940,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "CHEM135 and permission of dept.",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -962,7 +951,7 @@
     "CR": 3,
     "Offered": "Fa, Sp",
     "Prerequisites": "ENCE 215, PHYS 260 and permission  of dept",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -973,7 +962,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "ENSP 101 and 102. Minimum of 60 credits earned and permission from dept.",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -984,7 +973,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "ENST 233",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -995,7 +984,7 @@
     "CR": 4,
     "Offered": "Fa, Sp",
     "Prerequisites": "BSCI160 and BSCI161; or BSCI106.BSCI 106; Restricted to ENST majors",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -1006,7 +995,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "MATH 140 or 220. Junior Standing",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -1017,7 +1006,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "ENST360 or BSCI361; or permission of instructor.",
-    "Minor~": "PAI",
+    "Minor": "PAI",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -1028,7 +1017,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "CHEM131, PHYS121, and MATH113; or permission of AGNR",
-    "Minor~": "SAT",
+    "Minor": "SAT",
     "CORE": "IE",
     "Gen Ed": "DSSP, SCIS",
     "Major": "Y"
@@ -1039,7 +1028,7 @@
     "CR": 3,
     "Offered": "Fa",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -1050,7 +1039,7 @@
     "CR": 3,
     "Offered": "fa,",
     "Prerequisites": "",
-    "Minor~": "SHD,PAI",
+    "Minor": "SHD,PAI",
     "CORE": "D",
     "Gen Ed": "",
     "Major": "Y"
@@ -1061,7 +1050,7 @@
     "CR": 3,
     "Offered": "Sp",
     "Prerequisites": "BSCI170 and BSCI171; or BSCI105",
-    "Minor~": "SAT or SHD",
+    "Minor": "SAT or SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"
@@ -1072,7 +1061,7 @@
     "CR": 3,
     "Offered": "F",
     "Prerequisites": "",
-    "Minor~": "SHD",
+    "Minor": "SHD",
     "CORE": "",
     "Gen Ed": "",
     "Major": "Y"

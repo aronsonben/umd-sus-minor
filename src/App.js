@@ -7,7 +7,21 @@ import 'react-table/react-table.css';
 import courses from './courses';
 
 class App extends Component {
-  render() {
+    constructor(props) {
+        super(props);
+    }
+
+    getColor(minor) {
+        return minor === 'SAT' ? "#00800087" : minor === 'SHD'
+                ? "#ffff0080" : minor === 'PAI'
+                    ? "#cd5c5c8f" : (minor.includes('SAT') && minor.includes('PAI'))
+                        ? "#9a62f3a3" : (minor.includes('SAT') && minor.includes('SHD'))
+                            ? "#628ff3a3" : (minor.includes('SHD') && minor.includes('PAI'))
+                                ? "#ffb100b5" : "white";
+    }
+
+    render() {
+        var red = true;
         const columns = [{
             Header: 'Course',
             accessor: 'Course',
@@ -35,9 +49,20 @@ class App extends Component {
             filterAll: true
         }, {
             Header: 'Minor',
-            accessor: 'Minor~',
+            accessor: 'Minor',
             width: 90,
-            filterAll: true
+            filterAll: true,
+            Cell: row => {
+                let minor = row.original.Minor;
+
+                return (
+                    <div style={{
+                        backgroundColor: this.getColor(minor)
+                    }}>
+                        {row.original.Minor}
+                    </div>
+                );
+            }
         }, {
             Header: 'CORE',
             accessor: 'CORE',
@@ -70,15 +95,19 @@ class App extends Component {
                             columns={columns}
                             filterable={true}
                             defaultFilterMethod={(filter, rows, column) =>
-                                matchSorter(rows, filter.value, { keys: [column.Header] })}
+                                matchSorter(rows, filter.value, {keys: [column.Header]})}
                             className="-striped -highlight"
-                            />
+                        />
                     </div>
                     <div id="table-info">
                         <p style={{fontSize: '18px'}}><b>Notes:</b></p>
-                        <b>*Course approved for more than one category may be used only once to complete minor requirements.< br />
-                        *Please see the Sustainability Studies advisor to determine its best placement in your program. <br />
-                        ~Minor category abbreviations are as follows: SAT is Science and Technology; PAI is Policy and Institutions; SHD is Social and Human Dimensions <br />
+                        <b>*Course approved for more than one category may be used only once to complete minor
+                            requirements.< br/>
+                            *Please see the Sustainability Studies advisor to determine its best placement in your
+                            program. <br/>
+                            ~Minor category abbreviations are as follows: SAT is Science and Technology; PAI is Policy
+                            and
+                            Institutions; SHD is Social and Human Dimensions <br/>
                         </b>
                     </div>
                 </div>
