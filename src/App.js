@@ -54,7 +54,6 @@ class App extends Component {
             filterAll: true,
             Cell: row => {
                 let minor = row.original.Minor;
-
                 return (
                     <div style={{
                         backgroundColor: this.getColor(minor)
@@ -62,7 +61,18 @@ class App extends Component {
                         {row.original.Minor}
                     </div>
                 );
-            }
+            },
+            Filter: ({ filter, onChange }) =>
+                <select
+                    onChange={event => onChange(event.target.value)}
+                    style={{width: "100%"}}
+                    value={filter ? filter.value : "all"}
+                >
+                    <option value="ALL">Show All</option>
+                    <option value="SAT">SAT</option>
+                    <option value="SHD">SHD</option>
+                    <option value="PAI">PAI</option>
+                </select>
         }, {
             Header: 'CORE',
             accessor: 'CORE',
@@ -77,6 +87,9 @@ class App extends Component {
             accessor: 'Major',
             width: 75,
             filterAll: true
+        }, {
+            Header: 'Expand',
+            expander: true
         }];
         return (
             <div className="App">
@@ -96,6 +109,18 @@ class App extends Component {
                             filterable={true}
                             defaultFilterMethod={(filter, rows, column) =>
                                 matchSorter(rows, filter.value, {keys: [column.Header]})}
+                            SubComponent={row => {
+                                const data = row.original;
+                                console.log(data);
+                                return(
+                                    <div style={{textAlign: 'left', padding: '0 25px'}}>
+                                        <h3>{data.Course}</h3>
+                                        <p><b>Description: </b>{data.Description}</p>
+                                        <p><b>Prerequisites: </b>{data['Prerequisites']}</p>
+                                        <p><b>Gen Ed: </b>{data['Gen Ed']}</p>
+                                    </div>
+                                )
+                            }}
                             className="-striped -highlight"
                         />
                     </div>
