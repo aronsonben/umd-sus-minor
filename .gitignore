@@ -15,7 +15,11 @@
 .env.development.local
 .env.test.local
 .env.production.local
-/.idea
+.idea/
+extra.txt
+umd_susminor.pdf
+tabula-umd_susminor.csv
+sus_minor.iml
 
 npm-debug.log*
 yarn-debug.log*

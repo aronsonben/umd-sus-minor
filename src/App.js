@@ -25,32 +25,28 @@ class App extends Component {
         const columns = [{
             Header: 'Course',
             accessor: 'Course',
-            maxWidth: 200,
+            maxWidth: 250,
             filterAll: true
         }, {
             Header: 'Description',
             accessor: 'Description',
-            width: 300,
+            width: 550,
             filterAll: true,
             style: {textAlign: 'left'}
         }, {
             Header: 'CR',
             accessor: 'CR',
-            width: 50,
+            width: 60,
             filterAll: true
         }, {
             Header: 'Offered',
             accessor: 'Offered',
-            filterAll: true
-        }, {
-            Header: 'Prerequisites',
-            accessor: 'Prerequisites',
-            width: 300,
+            width: 150,
             filterAll: true
         }, {
             Header: 'Minor',
             accessor: 'Minor',
-            width: 90,
+            width: 100,
             filterAll: true,
             Cell: row => {
                 let minor = row.original.Minor;
@@ -62,25 +58,29 @@ class App extends Component {
                     </div>
                 );
             },
+            filterMethod: (filter, rows, column) => {
+                if(filter.value === "all") {
+                    console.log(filter.value);
+                    return rows;
+                } else {
+                    return matchSorter(rows, filter.value, {keys: [column.Header]});
+                }
+            },
             Filter: ({ filter, onChange }) =>
                 <select
                     onChange={event => onChange(event.target.value)}
                     style={{width: "100%"}}
-                    value={filter ? filter.value : "all"}
+                    value={filter ? filter.value : true}
                 >
-                    <option value="ALL">Show All</option>
+                    <option value="all">Show All</option>
                     <option value="SAT">SAT</option>
                     <option value="SHD">SHD</option>
                     <option value="PAI">PAI</option>
                 </select>
         }, {
-            Header: 'CORE',
-            accessor: 'CORE',
-            width: 80,
-            filterAll: true
-        }, {
             Header: 'Gen Ed',
             accessor: 'Gen Ed',
+            width: 200,
             filterAll: true
         }, {
             Header: 'Major',
@@ -89,7 +89,21 @@ class App extends Component {
             filterAll: true
         }, {
             Header: 'Expand',
-            expander: true
+            expander: true,
+            width: 70,
+            Expander: ({ isExpanded, ...rest }) =>
+                <div>
+                    {isExpanded
+                        ? <span>&#x2299;</span>
+                        : <span>&#x2295;</span>}
+                </div>,
+            style: {
+                cursor: "pointer",
+                fontSize: 25,
+                padding: "0",
+                textAlign: "center",
+                userSelect: "none"
+            }
         }];
         return (
             <div className="App">
@@ -118,6 +132,7 @@ class App extends Component {
                                         <p><b>Description: </b>{data.Description}</p>
                                         <p><b>Prerequisites: </b>{data['Prerequisites']}</p>
                                         <p><b>Gen Ed: </b>{data['Gen Ed']}</p>
+                                        <p><b>CORE: </b>{data['CORE']}</p>
                                     </div>
                                 )
                             }}
