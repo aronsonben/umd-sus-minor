@@ -5,10 +5,15 @@ import matchSorter from 'match-sorter';
 import './App.css';
 import 'react-table/react-table.css';
 import courses from './courses';
+import CourseFilter from './CourseFilter.js';
 
 class App extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            courseData: courses,
+            selectedOption: null
+        };
     }
 
     getColor(minor) {
@@ -20,17 +25,41 @@ class App extends Component {
                                 ? "#ffb100b5" : "white";
     }
 
+    onFiltersChange(s) {
+        console.log(s);
+    }
+
     render() {
-        var red = true;
+        const { courseData } = this.state;
         const columns = [{
             Header: 'Course',
             accessor: 'Course',
-            maxWidth: 250,
-            filterAll: true
+            width: 250,
+            filterMethod: (filter, row) => {
+                if(filter.value.length === 0) {
+                    return true;
+                }
+                for(let i=0; i < filter.value.length; i++) {
+                    console.log(filter.value[i].value);
+                    if(row['Course'].includes(filter.value[i].value)) {
+                        return true;
+                    }
+                }
+                return false;
+            },
+            Filter: ({column, filter, onChange}) => {
+                return(
+                    <CourseFilter
+                        courseData={this.state.courseData}
+                        selectedOptions={this.state.selectedOption}
+                        onChange={(s) => onChange(s)}
+                    />
+                )
+            }
         }, {
             Header: 'Description',
             accessor: 'Description',
-            width: 550,
+            width: 500,
             filterAll: true,
             style: {textAlign: 'left'}
         }, {
@@ -118,11 +147,19 @@ class App extends Component {
                     <h3>Course Table: </h3>
                     <div id="course-table">
                         <ReactTable
-                            data={courses}
+                            data={courseData}
                             columns={columns}
                             filterable={true}
+                            showPagination={true}
+                            pageSizeOptions={[5, 10, 20, 100]}
+                            defaultPageSize={20}
+                            minRows={1}
                             defaultFilterMethod={(filter, rows, column) =>
                                 matchSorter(rows, filter.value, {keys: [column.Header]})}
+                            defaultSorted={[{
+                                id: 'Course',
+                                desc: false
+                            }]}
                             SubComponent={row => {
                                 const data = row.original;
                                 console.log(data);
