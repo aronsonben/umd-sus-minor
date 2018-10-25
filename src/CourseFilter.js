@@ -11,6 +11,7 @@ class CourseFilter extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleFilterClick = this.handleFilterClick.bind(this);
+        this.closeFilter = this.closeFilter.bind(this);
     }
 
     getDepartments() {
@@ -55,6 +56,11 @@ class CourseFilter extends Component {
         this.setState({ courseFilterStyle: !courseFilterStyle });
     }
 
+    closeFilter() {
+        const { courseFilterStyle } = this.state;
+        this.setState({ courseFilterStyle: false });
+    }
+
     render() {
         const { selectedOption, courseFilterStyle } = this.state;
         var departments = this.getDepartments();
@@ -62,7 +68,7 @@ class CourseFilter extends Component {
             height: "350px"
         };
         return (
-            <div className="course-filter" style={courseFilterStyle ? filterOpen : null} >
+            <div className="course-filter" style={courseFilterStyle ? filterOpen : null} onClick={this.handleFilterClick}>
                 <span className="tooltiptext">Click away to reset height</span>
                 <Select
                     value={selectedOption}
@@ -70,8 +76,9 @@ class CourseFilter extends Component {
                     options={departments}
                     isSearchable={true}
                     isMulti={true}
-                    onFocus={this.handleFilterClick}
-                    onBlur={this.handleFilterClick}
+                    onBlur={this.closeFilter}
+                    captureMenuScroll={true}
+                    blurInputOnSelect={true}
                 />
             </div>
         )
