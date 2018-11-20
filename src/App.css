@@ -9,22 +9,28 @@
 }
 
 .App-header {
-  background-color: #222;
-  /*height: 150px;*/
-  padding: 20px;
+  display: block;
+  background-color: #464646;
+  height: 60px;
+  padding: 5px;
   color: white;
+  box-shadow: 0 2px 8px grey;
 }
-
-.App-title {
-  font-size: 1.5em;
+.App-header h2 {
+  float: left;
+  margin-left: 75px;
 }
-
-.App-intro {
-  font-size: large;
+.App-header button {
+  float: right;
+  margin: 25px;
 }
 
 .App-body {
   padding-bottom: 30px;
+}
+.App-body h2 {
+  margin-left: 80px;
+  text-align: left;
 }
 
 @keyframes App-logo-spin {
@@ -32,11 +38,70 @@
   to { transform: rotate(360deg); }
 }
 
+.App-footer {
+  background-color: #464646;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 -1px 5px grey;
+  height: 200px;
+}
+
 /* React table custom css */
 #course-table{
   width: 90%;
   margin: auto;
   margin-bottom: 30px;
+}
+
+.tableInfo {
+  border: 1px solid;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.courseSelector {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.courseSelectForm {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 25px;
+}
+
+#courseSelect {
+  display: inline-block;
+  width: 25%;
+}
+
+#selectButton {
+  display: inline-block;
+  width: 75px;
+  height: 38px;
+  border-radius: 5px;
+  vertical-align: top;
+  margin: 0 5px;
+  background-color: green;
+  color: white;
+}
+
+#selectedCourses {
+  border: black solid 1px;
+}
+
+#courseItem {
+  list-style-type: none;
+}
+
+.blank {
+  width: 100%;
+  height: 200px;
 }
 
 .tooltiptext {

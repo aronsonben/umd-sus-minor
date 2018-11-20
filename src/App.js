@@ -6,14 +6,21 @@ import './App.css';
 import 'react-table/react-table.css';
 import courses from './courses';
 import CourseFilter from './CourseFilter.js';
+import TableSubComponent from './TableSubComponent.js';
+import CourseSelector from './CourseSelector.js';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
             courseData: courses,
-            selectedOption: null
+            selectedOption: null,
+            selectedCourses: [],
+            selectedOptionForBuilder: null
         };
+        this.addClassToMinor = this.addClassToMinor.bind(this);
+        this.clearMinor = this.clearMinor.bind(this);
+        this.onBuildersChange = this.onBuildersChange.bind(this);
     }
 
     getColor(minor) {
@@ -27,6 +34,33 @@ class App extends Component {
 
     onFiltersChange(s) {
         console.log(s);
+    }
+
+    addClassToMinor(evt, selectedOption) {
+        var { selectedCourses } = this.state;
+        evt.preventDefault();
+        console.log(selectedOption);
+        if(selectedOption === null) {
+            console.log("Please select an option from the dropdown to the right.");
+            return;
+        }
+        if(selectedCourses.includes(selectedOption)) {
+            console.log("Selected course already added to 'Minor Builder'");
+        } else {
+            selectedCourses.push(selectedOption);
+            this.setState({selectedCourses: selectedCourses});
+            console.log("Successfully added " + selectedOption.value + " to 'Minor Builder'");
+        }
+    }
+
+    clearMinor(evt) {
+        var { selectedCourses } = this.state;
+        evt.preventDefault();
+        this.setState({selectedCourses: []});
+    }
+
+    onBuildersChange(selectedCourse) {
+        this.setState({selectedOptionForBuilder: selectedCourse});
     }
 
     render() {
@@ -59,7 +93,7 @@ class App extends Component {
         }, {
             Header: 'Description',
             accessor: 'Description',
-            width: 500,
+            width: 525,
             filterAll: true,
             style: {textAlign: 'left'}
         }, {
@@ -114,12 +148,29 @@ class App extends Component {
         }, {
             Header: 'Major',
             accessor: 'Major',
-            width: 75,
-            filterAll: true
+            width: 65,
+            filterAll: true,
+            filterMethod: (filter, rows, column) => {
+                if(filter.value === "all") {
+                    return rows;
+                } else {
+                    return matchSorter(rows, filter.value, {keys: [column.Header]});
+                }
+            },
+            Filter: ({filter, onChange}) =>
+                <select
+                    onChange={event => onChange(event.target.value)}
+                    style={{width: "100%"}}
+                    value={filter ? filter.value : true}
+                >
+                    <option value="all">All</option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
         }, {
             Header: 'Expand',
             expander: true,
-            width: 70,
+            width: 65,
             Expander: ({ isExpanded, ...rest }) =>
                 <div>
                     {isExpanded
@@ -137,14 +188,11 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h1>
-                        <img src={logo} className="App-logo" alt="logo"/>
-                        Welcome
-                        <img src={logo} className="App-logo" alt="logo"/>
-                    </h1>
+                    <h2>sus-min</h2>
+                    <button>log-in</button>
                 </header>
                 <div className="App-body">
-                    <h3>Course Table: </h3>
+                    <h2>Course Table</h2>
                     <div id="course-table">
                         <ReactTable
                             data={courseData}
@@ -164,30 +212,40 @@ class App extends Component {
                                 const data = row.original;
                                 console.log(data);
                                 return(
-                                    <div style={{textAlign: 'left', padding: '0 25px'}}>
-                                        <h3>{data.Course}</h3>
-                                        <p><b>Description: </b>{data.Description}</p>
-                                        <p><b>Prerequisites: </b>{data['Prerequisites']}</p>
-                                        <p><b>Gen Ed: </b>{data['Gen Ed']}</p>
-                                        <p><b>CORE: </b>{data['CORE']}</p>
-                                    </div>
+                                    <TableSubComponent
+                                        data={data}/>
                                 )
                             }}
                             className="-striped -highlight"
                         />
                     </div>
-                    <div id="table-info">
-                        <p style={{fontSize: '18px'}}><b>Notes:</b></p>
-                        <b>*Course approved for more than one category may be used only once to complete minor
-                            requirements.< br/>
+                    <div className="tableInfo">
+                        <p style={{fontSize: '17px'}}><b>Notes:</b></p>
+                        *Course approved for more than one category may be used only once to complete minor
+                            requirements.< br/><br/>
                             *Please see the Sustainability Studies advisor to determine its best placement in your
-                            program. <br/>
+                            program. <br/><br/>
                             ~Minor category abbreviations are as follows: SAT is Science and Technology; PAI is Policy
                             and
                             Institutions; SHD is Social and Human Dimensions <br/>
-                        </b>
                     </div>
                 </div>
+                <div className="courseSelector">
+                    <h3>Course Selector</h3>
+                    <p><i>Use this tool to build your minor.</i></p>
+                    <CourseSelector
+                        courseData={this.state.courseData}
+                        selectedCourses={this.state.selectedCourses}
+                        addClassToMinor={this.addClassToMinor}
+                        clearMinor={this.clearMinor}
+                    />
+                </div>
+                <div className="blank">
+                    <p><i>text.text.text</i></p>
+                </div>
+                <footer className="App-footer">
+                    Made by <a href="https://github.com/aronsonben" style={{color: 'red'}}>Ben Aronson</a>
+                </footer>
             </div>
         );
     }

@@ -57,16 +57,13 @@ class CourseFilter extends Component {
     }
 
     closeFilter() {
-        const { courseFilterStyle } = this.state;
         this.setState({ courseFilterStyle: false });
     }
 
     render() {
         const { selectedOption, courseFilterStyle } = this.state;
         var departments = this.getDepartments();
-        var filterOpen = {
-            height: "350px"
-        };
+        var filterOpen = { height: "350px" };
         return (
             <div className="course-filter" style={courseFilterStyle ? filterOpen : null} onClick={this.handleFilterClick}>
                 <span className="tooltiptext">Click away to reset height</span>
