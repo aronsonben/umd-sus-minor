@@ -93,7 +93,7 @@ class App extends Component {
         }, {
             Header: 'Description',
             accessor: 'Description',
-            width: 525,
+            width: 460,
             filterAll: true,
             style: {textAlign: 'left'}
         }, {

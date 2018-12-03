@@ -62,16 +62,16 @@
 }
 
 .courseSelector {
-  text-align: center;
   width: 90%;
   margin: auto;
   padding: 10px;
+  background-color: #dfe0f1;
+  border-radius: 5px;
 }
 
 .courseSelectForm {
   display: inline-block;
   width: 100%;
-  vertical-align: middle;
   margin: 25px;
 }
 
@@ -91,12 +91,42 @@
   color: white;
 }
 
-#selectedCourses {
+.selectorDisplay {
+  width: 75%;
   border: black solid 1px;
+  border-radius: 3px;
+  background-color: #d6d9d6;
+  margin-bottom: 15px;
+  display: inline-block;
+  min-height: 175px;
+}
+
+#requirements {
+  float: left;
+  width: 250px;
+  padding: 10px;
+  border-right: black solid 1px;
+}
+
+.selectedCourses {
+  float: left;
+  width: 722px;
+  padding: 10px;
+}
+
+#selectedCourseList {
+  list-style-type: none;
+  padding: 0;
 }
 
 #courseItem {
-  list-style-type: none;
+  list-style: none;
+  background-color: indianred;
+  border-radius: 5px;
+  margin: 5px 25px 0 0;
+  padding: 3px;
+  width: 50%;
+  display: inline-block;
 }
 
 .blank {

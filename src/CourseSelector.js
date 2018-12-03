@@ -49,7 +49,6 @@ class CourseSelector extends Component {
         return (
           <div>
               <form className="courseSelectForm">
-                  <button id="selectButton" onClick={(evt) => addClassToMinor(evt, selectedOption)}>Add class</button>
                   <Select
                       id="courseSelect"
                       value={selectedOption}
@@ -57,13 +56,27 @@ class CourseSelector extends Component {
                       options={courses}
                       isSearchable={true}
                   />
-                  <button id="selectButton" style={{backgroundColor: 'indianred'}} onClick={(evt) => clearMinor(evt)}>Clear</button>
+                  <button id="selectButton" onClick={(evt) => addClassToMinor(evt, selectedOption)}>Add class</button>
+                  <button id="selectButton" style={{backgroundColor: 'indianred', marginLeft: 0}} onClick={(evt) => clearMinor(evt)}>Clear</button>
               </form>
-              <div id="selectedCourses">
-                  <p>Selected states: </p>
-                  <ul>
-                    {selectedCourses.map((c) => this.displaySelectedCourses(c))}
-                  </ul>
+              <div className="selectorDisplay">
+                  <div id="requirements">
+                      <ul>
+                          <li>ANTH/PLCY 301</li>
+                          <li>SAT</li>
+                          <li>PAI</li>
+                          <li>SHD</li>
+                          <li>One other form of credits</li>
+                          <li>9 credits upper level</li>
+                          <li>15 credits total</li>
+                      </ul>
+                  </div>
+                  <div className="selectedCourses">
+                      <p>Selected states: </p>
+                      <ul id="selectedCourseList">
+                        {selectedCourses.map((c) => this.displaySelectedCourses(c))}
+                      </ul>
+                  </div>
               </div>
           </div>
         );
